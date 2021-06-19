@@ -5,6 +5,7 @@ import com.example.jinsungspringstudy.domain.User.User;
 import lombok.*;
 
 import javax.persistence.*;
+import java.math.BigDecimal;
 
 @NoArgsConstructor
 @AllArgsConstructor
@@ -21,9 +22,9 @@ public class Order {
     private User user;
     @ManyToOne
     private Product product;
-    private int quantity;
-    private int price;
-    private int remainingQuantity;
+    private BigDecimal quantity;
+    private BigDecimal price;
+    private BigDecimal remainingQuantity;
     private String orderedAt;
     private Boolean buyOrSell;
     private Boolean status;

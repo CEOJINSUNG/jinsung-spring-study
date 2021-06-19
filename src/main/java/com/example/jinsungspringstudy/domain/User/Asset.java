@@ -4,6 +4,7 @@ import com.example.jinsungspringstudy.domain.Product.Product;
 import lombok.*;
 
 import javax.persistence.*;
+import java.math.BigDecimal;
 
 @NoArgsConstructor
 @AllArgsConstructor
@@ -20,5 +21,5 @@ public class Asset {
     private User user;
     @ManyToOne
     private Product product;
-    private int productQuantity;
+    private BigDecimal productQuantity;
 }
