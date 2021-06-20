@@ -10,7 +10,6 @@ import java.util.List;
 
 @NoArgsConstructor
 @AllArgsConstructor
-@RequiredArgsConstructor
 @Data
 @Builder
 @Entity
@@ -21,8 +20,8 @@ public class Product {
     private Long id;
     private String abbreviationName;
     private String fullName;
-    private URL imageUrl;
+    private String imageUrl;
 
-    @OneToMany(mappedBy = "market")
-    private List<Market> market = new ArrayList<>();
+    @ManyToOne
+    private Market market;
 }

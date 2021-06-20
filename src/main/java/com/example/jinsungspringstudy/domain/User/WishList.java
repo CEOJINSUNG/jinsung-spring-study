@@ -7,7 +7,6 @@ import javax.persistence.*;
 
 @NoArgsConstructor
 @AllArgsConstructor
-@RequiredArgsConstructor
 @Data
 @Builder
 @Entity

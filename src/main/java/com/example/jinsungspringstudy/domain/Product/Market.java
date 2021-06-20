@@ -9,7 +9,6 @@ import javax.persistence.Table;
 
 @NoArgsConstructor
 @AllArgsConstructor
-@RequiredArgsConstructor
 @Data
 @Builder
 @Entity

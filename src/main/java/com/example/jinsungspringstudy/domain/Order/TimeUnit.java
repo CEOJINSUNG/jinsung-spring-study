@@ -12,13 +12,11 @@ import javax.persistence.Table;
 
 @RequiredArgsConstructor
 @Data
-@Builder
 @Entity
 @Table(name = "timeunit")
 public class TimeUnit {
     @Id
     @GeneratedValue
     private Long id;
-    @NotNull
     private String name;
 }
